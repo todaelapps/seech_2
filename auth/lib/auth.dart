@@ -16,7 +16,7 @@ class AppService extends ApplicationChannel {
 
   @override
   Controller get entryPoint => Router()
-    ..route("token[:refresh]").link(
+    ..route("token/[:refresh]").link(
       () => AppAuthController(managedContext),
     );
 
